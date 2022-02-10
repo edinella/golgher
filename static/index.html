@@ -1,16 +1,141 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Golgher</title>
-  </head>
-  <body>
-    <h1>Golgher</h1>
-  </body>
-</html>
 
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golgher</title>
+
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Source+Sans+Pro&display=swap');
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: inherit;
+      font-weight: inherit;
+    }
+
+    html {
+      font-size: 16px;
+    }
+
+    body {
+      margin: 0;
+      font-size: 62.5%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: white;
+      color: #202124;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+    }
+
+    form {
+      width: 90%;
+      max-width: 584px;
+    }
+
+    h1 {
+      font-size: 4.5rem;
+      margin: 0;
+    }
+
+    h1 span {
+      font-size: 4.5rem;
+      display: inline-block;
+      margin: -0.6rem;
+    }
+
+    .letter-blue {
+      color: #4285F4;
+    }
+
+    .letter-red {
+      color: #EA4235;
+    }
+
+    .letter-yellow {
+      color: #FBBC04
+    }
+
+    .letter-green {
+      color: #34A853
+    }
+
+    .search {
+      margin-top: 1.3rem;
+      border: 1px solid #dfe1e5;
+      background: white;
+      border-radius: 24px;
+      height: 44px;
+      box-shadow: none;
+    }
+
+    .search:hover {
+      box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+      border-color: rgba(223, 225, 229, 0);
+    }
+
+    .search-container {
+      display: flex;
+      flex: 1;
+      padding: .3rem .6rem;
+    }
+
+    .search-container input {
+      display: flex;
+      flex: 100%;
+      word-wrap: break-word;
+      outline: none;
+      height: 2.1rem;
+      font-size: 1rem;
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+
+    .submit {
+      padding: .4rem .6rem 0 0;
+    }
+
+    .submit input {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="http://www.google.com/search" method="get">
+    <h1>
+      <span class="letter-blue">G</span>
+      <span class="letter-red">o</span>
+      <span class="letter-yellow">l</span>
+      <span class="letter-blue">g</span>
+      <span class="letter-green">h</span>
+      <span class="letter-red">e</span>
+      <span class="letter-blue">r</span>
+    </h1>
+    <div class="search">
+      <div class="search-container">
+        <label class="submit">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M18.319 14.4326C20.7628 11.2941 20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895 6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075 15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829 20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066 18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426 5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005 16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005 2.93936 13.8995 2.93936 16.2426 5.28251Z"
+              fill="currentColor" />
+          </svg>
+          <input type="submit" />
+        </label>
+        <input type="search" name="q" placeholder="" />
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>
