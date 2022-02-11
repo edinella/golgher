@@ -30,6 +30,7 @@ body {
 form {
   width: 90%;
   max-width: 584px;
+  padding-bottom: 5rem;
 }
 
 h1 {
